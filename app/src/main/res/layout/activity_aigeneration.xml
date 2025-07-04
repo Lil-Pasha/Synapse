@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101010"
+    android:padding="16dp"
+    android:fitsSystemWindows="true">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/titleAI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Synapse"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Область вывода сообщений -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/titleAI"
+        android:layout_above="@id/inputContainer"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/messageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:divider="@drawable/message_divider"
+            android:showDividers="middle" />
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Контейнер для ввода и кнопки -->
+    <LinearLayout
+        android:id="@+id/inputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/editMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Введите сообщение..."
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:inputType="textCapSentences|textMultiLine"
+            android:imeOptions="actionDone"
+            android:maxLines="5"
+            android:scrollHorizontally="false"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_send"
+            android:background="@android:color/transparent"
+            android:contentDescription="Отправить сообщение"
+            android:scaleType="centerInside"
+            android:padding="12dp"
+            app:tint="#ffffff" />
+    </LinearLayout>
+</RelativeLayout>

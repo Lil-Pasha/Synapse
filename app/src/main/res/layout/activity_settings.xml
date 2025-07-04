@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    android:padding="16dp">
+
+    <!-- Кнопка Назад как стрелка -->
+
+    <!-- Заголовок -->
+
+    <!-- Обновления -->
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:contentDescription="Назад"
+        android:src="@drawable/ic_back_arrow"
+        app:tint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/settingsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnBack"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="55dp"
+        android:gravity="center"
+        android:text="Настройки"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sectionUpdates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settingsTitle"
+        android:layout_marginTop="48dp"
+        android:text="Обновления"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textUpdates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sectionUpdates"
+        android:text="Вы используете последнюю стабильную версию."
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- О программе -->
+    <TextView
+        android:id="@+id/sectionAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textUpdates"
+        android:layout_marginTop="32dp"
+        android:text="О программе"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sectionAbout"
+        android:text="Разработчик: ХХХ\nВерсия: 1.0.0\nGitHub: github.com/Lil-Pasha/"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Связь -->
+    <TextView
+        android:id="@+id/sectionContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAbout"
+        android:layout_marginTop="32dp"
+        android:text="Связь"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sectionContact"
+        android:text="Telegram: @mr_pablo3\nDiscord: Pashtetus"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>
