@@ -44,10 +44,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/settingsTitle"
         android:layout_marginTop="48dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
         android:text="Обновления"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground" />
 
     <TextView
         android:id="@+id/textUpdates"
@@ -57,8 +62,9 @@
         android:text="Вы используете последнюю стабильную версию."
         android:textColor="#CCCCCC"
         android:textSize="14sp"
-        android:layout_marginTop="8dp" />
-
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
     <!-- О программе -->
     <TextView
         android:id="@+id/sectionAbout"
@@ -66,6 +72,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textUpdates"
         android:layout_marginTop="32dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
         android:text="О программе"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -76,10 +84,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/sectionAbout"
-        android:text="Разработчик: ХХХ\nВерсия: 1.0.0\nGitHub: github.com/Lil-Pasha/"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="Разработчик: ХХХ\nВерсия: 1.0.1\nGitHub: github.com/Lil-Pasha/Synapse"
         android:textColor="#CCCCCC"
-        android:textSize="14sp"
-        android:layout_marginTop="8dp" />
+        android:textSize="14sp" />
 
     <!-- Связь -->
     <TextView
@@ -88,6 +98,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textAbout"
         android:layout_marginTop="32dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
         android:text="Связь"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -98,9 +110,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/sectionContact"
-        android:text="Telegram: @mr_pablo3\nDiscord: Pashtetus"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="Telegram: @mr_pablo3\nDiscord: Pashtetus!"
         android:textColor="#CCCCCC"
-        android:textSize="14sp"
-        android:layout_marginTop="8dp" />
+        android:textSize="14sp" />
+
 
 </RelativeLayout>

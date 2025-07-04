@@ -13,11 +13,9 @@ android {
         minSdk = 24
         targetSdk = 35
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.1"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"}
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -27,6 +25,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -65,4 +64,5 @@ dependencies {
     implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation ("androidx.core:core-ktx:1.9.0")
     implementation ("androidx.work:work-runtime-ktx:2.8.1")
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
 }
